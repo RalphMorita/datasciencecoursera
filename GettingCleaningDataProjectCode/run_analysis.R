@@ -82,4 +82,5 @@ labeled_combined <- arrange(labeled_combined, labeled_combined$order) #this re-s
 MeanData <-aggregate(labeled_combined[,3:63], by=list(Activity = labeled_combined$description, Subject = labeled_combined$subject.id), FUN=mean, na.rm=TRUE)
 
 ## output the tidy data set as a text file with write.table() using row.name=FALSE
-write.table(MeanData, "./MeanData.txt", row.names = FALSE)
+if(!file.exists("../OutputFiles") )dir.create("..OutputFiles") #create the OutputFiles directory to store the output if it doesn't already exist
+write.table(MeanData, "../OutputFiles/MeanData.txt", row.names = FALSE)

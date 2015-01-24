@@ -11,23 +11,32 @@
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ##Inputs and Outputs
-The R code uses the datasets found at this [site](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
-Once downloaded and unziped there will be a directory called 'UCI HAR Dataset' containing the input files and additional information about these file.
-_*It is imperative that the R code be saved to this directory*_
+The R code uses the datasets found at this [site](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
+Once downloaded and unziped there will be a directory called 'UCI HAR Dataset' containing the input files and additional information about these files.
+_*It is imperative that the R code be saved to this directory*_.
 The provided R code contains lines that will download and unzip these file if they are not already available. Simply uncomment and run the appropriate lines
+
+
 __it is assumed that the data has been downloaded and that this R script is located in the UCI HAR Dataset folder__
 
+
+I have also included the unzipped data in this [directory](https://github.com/RalphMorita/datasciencecoursera/tree/master/UCI%20HAR%20Dataset)
+
 The R code will process the data and produce a tiny dataset MeanData.txt.
-This output file is space delimited file containing the Mean values for the appropriate measures in the UCI HAR Dataset data summarized by Activity and Subject
+
+This output file is space delimited file containing the Mean values for the appropriate measures in the UCI HAR Dataset data summarized by Activity and Subject.
+It is assumed that this output file will be stored in a folder called OutputFiles. The OutputFiles directory should be a the same directory level as the OCI HAR Dataset directory (the working directory).
+This output file can be found [here](https://github.com/RalphMorita/datasciencecoursera/blob/master/OutputFiles/MeanData.txt)
 
 ####A note about the measures used in the tidy dataset
 Requirement 2 states: "Extracts only the measurements on the mean and standard deviation for each measurement".
-This is a vague requirement since there are some measures that end in mean()-*axis*/std()-*axis* indicating that these are the mean/std for the feature 
-i.e. "tBodyAcc-mean()-X" would be the mean of tBodyAcc along the X axis
+
+This is a vague requirement since there are some measures that end in mean()-*axis*/std()-*axis* indicating that these are the mean/std for the measure.
+(i.e. "tBodyAcc-mean()-X" would be the mean of tBodyAcc along the X axis)
 _however_ some features contain mean/std in their names
-i.e. "fBodyAcc-meanFreq()-X" would be the weighted average of the frequency components to obtain a mean frequency for fBodyAcc along the X axis
-it is my interpretation that these latter Freq values should not be included as they capture the mean frequency and __not__ the mean
-if you disagree and feel that they meanFreq() values should be included, I have included some additional code to inlcude those values as well. 
+(i.e. "fBodyAcc-meanFreq()-X" would be the weighted average of the frequency components to obtain a mean frequency for fBodyAcc along the X axis).
+It is my interpretation that these latter Freq values should not be included as they capture the mean frequency and __not__ the mean.
+If you disagree and feel that they meanFreq() values should be included, I have included some additional code to inlcude those values as well. 
 Simply uncomment/comment the appropriate lines as described in the R code
 
 ####A note about measure names
