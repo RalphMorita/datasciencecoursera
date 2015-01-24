@@ -78,5 +78,8 @@ labeled_combined <- labeled_combined[,2:65] #remove the code column as it is no 
 labeled_combined <- arrange(labeled_combined, labeled_combined$order) #this re-sorts to the original order
 
 ## Requirement 5 is to create a second, independent tidy data set with the average of each variable for each activity and each subject from the data set in step 4
-# aggregate the data by mean for description (Activity Name) and subject.id
+## aggregate the data by mean for description (Activity Name) and subject.id
 MeanData <-aggregate(labeled_combined[,3:63], by=list(Activity = labeled_combined$description, Subject = labeled_combined$subject.id), FUN=mean, na.rm=TRUE)
+
+## output the tidy data set as a text file with write.table() using row.name=FALSE
+write.table(MeanData, "./MeanData.txt", row.names = FALSE)
