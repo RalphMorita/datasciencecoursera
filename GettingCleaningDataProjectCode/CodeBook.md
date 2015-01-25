@@ -104,66 +104,66 @@ The following variables are included in the output data:
 - 'Activity':             The Activity Performed (i.e. Walking, Standing, etc.)                      
 - 'Subject':              The ID of the participant (from 1-30)                         
 - 'tBodyAcc_mean_X':      Mean of the Mean Body Acceleration signal along the X axis in the time domain
--tBodyAcc_mean_Y      Mean of the Mean Body Acceleration signal along the Y axis in the time domain                 
--tBodyAcc_mean_Z      Mean of the Mean Body Acceleration signal along the Z axis in the time domain                
--tBodyAcc_std_X       Mean of the Standard Deviation of the Body Acceleration signal along the X axis in the time domain                 
--tBodyAcc_std_Y       Mean of the Standard Deviation of the Body Acceleration signal along the Y axis in the time domain                 
--tBodyAcc_std_Z       Mean of the Standard Deviation of the Body Acceleration signal along the Z axis in the time domain                 
--tGravityAcc_mean_X   Mean of the Mean Gravity Acceleration signal along the X axis in the time domain                
--tGravityAcc_mean_Y   Mean of the Mean Gravity Acceleration signal along the Y axis in the time domain              
--tGravityAcc_mean_Z   Mean of the Mean Gravity Acceleration signal along the Z axis in the time domain               
--tGravityAcc_std_X    Mean of the Standard Deviation of the Gravity Acceleration signal along the X axis in the time domain                 
--tGravityAcc_std_Y    Mean of the Standard Deviation of the Gravity Acceleration signal along the Y axis in the time domain               
--tGravityAcc_std_Z    Mean of the Standard Deviation of the Gravity Acceleration signal along the Z axis in the time domain               
--tBodyAccJerk_mean_X  Mean of the Mean Body Jerk Acceleration signal along the X axis in the time domain            
--tBodyAccJerk_mean_Y  Mean of the Mean Body Jerk Acceleration signal along the Y axis in the time domain             
--tBodyAccJerk_mean_Z  Mean of the Mean Body Jerk Acceleration signal along the Z axis in the time domain             
--tBodyAccJerk_std_X   Mean of the Standard Deviation of the Body Jerk Acceleration signal along the X axis in the time domain             
--tBodyAccJerk_std_Y   Mean of the Standard Deviation of the Body Jerk Acceleration signal along the Y axis in the time domain             
--tBodyAccJerk_std_Z   Mean of the Standard Deviation of the Body Jerk Acceleration signal along the Z axis in the time domain            
--tBodyGyro_mean_X     Mean of the Mean Body Gyro signal along the X axis in the time domain             
--tBodyGyro_mean_Y     Mean of the Mean Body Gyro signal along the Y axis in the time domain             
--tBodyGyro_mean_Z     Mean of the Mean Body Gyro signal along the Z axis in the time domain             
--tBodyGyro_std_X      Mean of the Standard Deviation of the Body Gyro signal along the X axis in the time domain             
--tBodyGyro_std_Y      Mean of the Standard Deviation of the Body Gyro signal along the Y axis in the time domain            
--tBodyGyro_std_Z      Mean of the Standard Deviation of the Body Gyro signal along the Z axis in the time domain             
--tBodyGyroJerk_mean_X Mean of the Mean Body Gyro Jerk signal along the X axis in the time domain             
--tBodyGyroJerk_mean_Y Mean of the Mean Body Gyro Jerk signal along the Y axis in the time domain             
--tBodyGyroJerk_mean_Z Mean of the Mean Body Gyro Jerk signal along the Z axis in the time domain             
--tBodyGyroJerk_std_X  Mean of the Standard Deviation of the Body Gyro Jerk signal along the X axis in the time domain            
--tBodyGyroJerk_std_Y  Mean of the Standard Deviation of the Body Gyro Jerk signal along the Y axis in the time domain             
--tBodyGyroJerk_std_Z  Mean of the Standard Deviation of the Body Gyro Jerk signal along the Z axis in the time domain             
--tBodyAccMag_std      Mean of the Standard Deviation of the Magnitude of the Body Acceleration signal in the time domain             
--tGravityAccMag_std   Mean of the Standard Deviation of the Magnitude of the Gravity Acceleration signal in the time domain             
--tBodyAccJerkMag_std  Mean of the Standard Deviation of the Magnitude of the Body Acceleration Jerk signal in the time domain              
--tBodyGyroMag_std     Mean of the Standard Deviation of the Magnitude of the Body Gyro signal in the time domain             
--tBodyGyroJerkMag_std Mean of the Standard Deviation of the Magnitude of the Body Gyro Jerk signal in the time domain             
--fBodyAcc_mean_X      Mean of the Mean Body Acceleration signal along the X axis in the frequency domain             
--fBodyAcc_mean_Y      Mean of the Mean Body Acceleration signal along the Y axis in the frequency domain             
--fBodyAcc_mean_Z      Mean of the Mean Body Acceleration signal along the Z axis in the frequency domain            
--fBodyAcc_std_X       Mean of the Standard Deviation of the Body Acceleration signal along the X axis in the frequency domain             
--fBodyAcc_std_Y       Mean of the Standard Deviation of the Body Acceleration signal along the Y axis in the frequency domain             
--fBodyAcc_std_Z       Mean of the Standard Deviation of the Body Acceleration signal along the Z axis in the frequency domain             
--fBodyAccJerk_mean_X  Mean of the Mean Body Acceleration Jerk signal along the X axis in the frequency domain             
--fBodyAccJerk_mean_Y  Mean of the Mean Body Acceleration Jerk signal along the Y axis in the frequency domain            
--fBodyAccJerk_mean_Z  Mean of the Mean Body Acceleration Jerk signal along the Z axis in the frequency domain             
--fBodyAccJerk_std_X   Mean of the Standard Deviation of the Body Acceleration Jerk signal along the X axis in the frequency domain             
--fBodyAccJerk_std_Y   Mean of the Standard Deviation of the Body Acceleration Jerk signal along the Y axis in the frequency domain             
--fBodyAccJerk_std_Z   Mean of the Standard Deviation of the Body Acceleration Jerk signal along the Z axis in the frequency domain             
--fBodyGyro_mean_X     Mean of the Mean Body Gyro signal along the X axis in the frequency domain            
--fBodyGyro_mean_Y     Mean of the Mean Body Gyro signal along the Y axis in the frequency domain             
--fBodyGyro_mean_Z     Mean of the Mean Body Gyro signal along the Z axis in the frequency domain             
--fBodyGyro_std_X      Mean of the Standard Deviation of the Body Gyro signal along the X axis in the frequency domain             
--fBodyGyro_std_Y      Mean of the Standard Deviation of the Body Gyro signal along the Y axis in the frequency domain             
--fBodyGyro_std_Z      Mean of the Standard Deviation of the Body Gyro signal along the Z axis in the frequency domain            
--fBodyAccMag_std      Mean of the Standard Deviation of the Magnitude of the Body Acceleration signal in the frequency domain             
--fBodyBodyAccJerkMag_std  Mean of the Standard Deviation of the Magnitude of the Body Acceleration Jerk signal in the frequency domain          
--fBodyBodyGyroMag_std Mean of the Standard Deviation of the Magnitude of the Body Gyro signal in the frequency domain             
--fBodyBodyGyroJerkMag_std Mean of the Standard Deviation of the Magnitude of the Body Gryo Jerk signal in the frequency domain         
--angle_tBodyAccMean_gravity Mean of the angle between two tBodyAccMean Vectors     
--angle_tBodyAccJerkMean_gravityMean Mean of the angle between two tBodyAccMJerkMean Vectors
--angle_tBodyGyroMean_gravityMean  Mean of the angle between two tBodyGyroMean Vectors  
--angle_tBodyGyroJerkMean_gravityMean  Mean of the angle between two tBodyGyroJerkMean Vectors
+- 'tBodyAcc_mean_Y':      Mean of the Mean Body Acceleration signal along the Y axis in the time domain                 
+- 'tBodyAcc_mean_Z':      Mean of the Mean Body Acceleration signal along the Z axis in the time domain                
+- 'tBodyAcc_std_X':       Mean of the Standard Deviation of the Body Acceleration signal along the X axis in the time domain                 
+- 'tBodyAcc_std_Y':       Mean of the Standard Deviation of the Body Acceleration signal along the Y axis in the time domain                 
+- 'tBodyAcc_std_Z':       Mean of the Standard Deviation of the Body Acceleration signal along the Z axis in the time domain                 
+- 'tGravityAcc_mean_X':   Mean of the Mean Gravity Acceleration signal along the X axis in the time domain                
+- 'tGravityAcc_mean_Y':   Mean of the Mean Gravity Acceleration signal along the Y axis in the time domain              
+- 'tGravityAcc_mean_Z':   Mean of the Mean Gravity Acceleration signal along the Z axis in the time domain               
+- 'tGravityAcc_std_X':    Mean of the Standard Deviation of the Gravity Acceleration signal along the X axis in the time domain                 
+- 'tGravityAcc_std_Y':    Mean of the Standard Deviation of the Gravity Acceleration signal along the Y axis in the time domain               
+- 'tGravityAcc_std_Z':    Mean of the Standard Deviation of the Gravity Acceleration signal along the Z axis in the time domain               
+- 'tBodyAccJerk_mean_X':  Mean of the Mean Body Jerk Acceleration signal along the X axis in the time domain            
+- 'tBodyAccJerk_mean_Y':  Mean of the Mean Body Jerk Acceleration signal along the Y axis in the time domain             
+- 'tBodyAccJerk_mean_Z':  Mean of the Mean Body Jerk Acceleration signal along the Z axis in the time domain             
+- 'tBodyAccJerk_std_X':   Mean of the Standard Deviation of the Body Jerk Acceleration signal along the X axis in the time domain             
+- 'tBodyAccJerk_std_Y':   Mean of the Standard Deviation of the Body Jerk Acceleration signal along the Y axis in the time domain             
+- 'tBodyAccJerk_std_Z':   Mean of the Standard Deviation of the Body Jerk Acceleration signal along the Z axis in the time domain            
+- 'tBodyGyro_mean_X':     Mean of the Mean Body Gyro signal along the X axis in the time domain             
+- 'tBodyGyro_mean_Y':     Mean of the Mean Body Gyro signal along the Y axis in the time domain             
+- 'tBodyGyro_mean_Z':     Mean of the Mean Body Gyro signal along the Z axis in the time domain             
+- 'tBodyGyro_std_X':      Mean of the Standard Deviation of the Body Gyro signal along the X axis in the time domain             
+- 'tBodyGyro_std_Y':      Mean of the Standard Deviation of the Body Gyro signal along the Y axis in the time domain            
+- 'tBodyGyro_std_Z':      Mean of the Standard Deviation of the Body Gyro signal along the Z axis in the time domain             
+- 'tBodyGyroJerk_mean_X': Mean of the Mean Body Gyro Jerk signal along the X axis in the time domain             
+- 'tBodyGyroJerk_mean_Y': Mean of the Mean Body Gyro Jerk signal along the Y axis in the time domain             
+- 'tBodyGyroJerk_mean_Z': Mean of the Mean Body Gyro Jerk signal along the Z axis in the time domain             
+- 'tBodyGyroJerk_std_X':  Mean of the Standard Deviation of the Body Gyro Jerk signal along the X axis in the time domain            
+- 'tBodyGyroJerk_std_Y':  Mean of the Standard Deviation of the Body Gyro Jerk signal along the Y axis in the time domain             
+- 'tBodyGyroJerk_std_Z':  Mean of the Standard Deviation of the Body Gyro Jerk signal along the Z axis in the time domain             
+- 'tBodyAccMag_std':      Mean of the Standard Deviation of the Magnitude of the Body Acceleration signal in the time domain             
+- 'tGravityAccMag_std':   Mean of the Standard Deviation of the Magnitude of the Gravity Acceleration signal in the time domain             
+- 'tBodyAccJerkMag_std':  Mean of the Standard Deviation of the Magnitude of the Body Acceleration Jerk signal in the time domain              
+- 'tBodyGyroMag_std':     Mean of the Standard Deviation of the Magnitude of the Body Gyro signal in the time domain             
+- 'tBodyGyroJerkMag_std': Mean of the Standard Deviation of the Magnitude of the Body Gyro Jerk signal in the time domain             
+- 'fBodyAcc_mean_X':      Mean of the Mean Body Acceleration signal along the X axis in the frequency domain             
+- 'fBodyAcc_mean_Y':      Mean of the Mean Body Acceleration signal along the Y axis in the frequency domain             
+- 'fBodyAcc_mean_Z':      Mean of the Mean Body Acceleration signal along the Z axis in the frequency domain            
+- 'fBodyAcc_std_X':       Mean of the Standard Deviation of the Body Acceleration signal along the X axis in the frequency domain             
+- 'fBodyAcc_std_Y':       Mean of the Standard Deviation of the Body Acceleration signal along the Y axis in the frequency domain             
+- 'fBodyAcc_std_Z':       Mean of the Standard Deviation of the Body Acceleration signal along the Z axis in the frequency domain             
+- 'fBodyAccJerk_mean_X':  Mean of the Mean Body Acceleration Jerk signal along the X axis in the frequency domain             
+- 'fBodyAccJerk_mean_Y':  Mean of the Mean Body Acceleration Jerk signal along the Y axis in the frequency domain            
+- 'fBodyAccJerk_mean_Z':  Mean of the Mean Body Acceleration Jerk signal along the Z axis in the frequency domain             
+- 'fBodyAccJerk_std_X':   Mean of the Standard Deviation of the Body Acceleration Jerk signal along the X axis in the frequency domain             
+- 'fBodyAccJerk_std_Y':   Mean of the Standard Deviation of the Body Acceleration Jerk signal along the Y axis in the frequency domain             
+- 'fBodyAccJerk_std_Z':   Mean of the Standard Deviation of the Body Acceleration Jerk signal along the Z axis in the frequency domain             
+- 'fBodyGyro_mean_X':     Mean of the Mean Body Gyro signal along the X axis in the frequency domain            
+- 'fBodyGyro_mean_Y':     Mean of the Mean Body Gyro signal along the Y axis in the frequency domain             
+- 'fBodyGyro_mean_Z':     Mean of the Mean Body Gyro signal along the Z axis in the frequency domain             
+- 'fBodyGyro_std_X':      Mean of the Standard Deviation of the Body Gyro signal along the X axis in the frequency domain             
+- 'fBodyGyro_std_Y':      Mean of the Standard Deviation of the Body Gyro signal along the Y axis in the frequency domain             
+- 'fBodyGyro_std_Z':      Mean of the Standard Deviation of the Body Gyro signal along the Z axis in the frequency domain            
+- 'fBodyAccMag_std':      Mean of the Standard Deviation of the Magnitude of the Body Acceleration signal in the frequency domain             
+- 'fBodyBodyAccJerkMag_std':  Mean of the Standard Deviation of the Magnitude of the Body Acceleration Jerk signal in the frequency domain          
+- 'fBodyBodyGyroMag_std': Mean of the Standard Deviation of the Magnitude of the Body Gyro signal in the frequency domain             
+- 'fBodyBodyGyroJerkMag_std': Mean of the Standard Deviation of the Magnitude of the Body Gryo Jerk signal in the frequency domain         
+- 'angle_tBodyAccMean_gravity': Mean of the angle between two tBodyAccMean Vectors     
+- 'angle_tBodyAccJerkMean_gravityMean': Mean of the angle between two tBodyAccMJerkMean Vectors
+- 'angle_tBodyGyroMean_gravityMean':  Mean of the angle between two tBodyGyroMean Vectors  
+- 'angle_tBodyGyroJerkMean_gravityMean':  Mean of the angle between two tBodyGyroJerkMean Vectors
 
 ##4. Information about the summary choices
 The data was summarized using the aggregate function calling the mean() function for the relevant input variables (those variables that measured mean or standard deviation). The data was summarized by Activity and Subject.
@@ -196,6 +196,7 @@ Notes:
 - Each feature vector is a row on the text file.
 
 For more information about this dataset contact: activityrecognition@smartlab.ws
+For more information about the R code, contact: Steve RalphMorita@users.noreply.github.com
 
 License:
 ========
