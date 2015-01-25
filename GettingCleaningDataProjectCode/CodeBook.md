@@ -101,9 +101,9 @@ The assignment required only the mean and standard deviation measures from the i
 The output is a tidy dataset called MeanData.txt. It can be found [here](https://github.com/RalphMorita/datasciencecoursera/blob/master/OutputFiles/MeanData.txt).
 This is a summarized file based on the input data. The data is summarized by Activity (Walking, Standing, etc.) and Subject (The id of the participant from 1-30).
 The following variables are included in the output data:
--Activity             The Activity Performed (i.e. Walking, Standing, etc.)                      
--Subject              The ID of the participant (from 1-30)                         
--tBodyAcc_mean_X      Mean of the Mean Body Acceleration signal along the X axis in the time domain
+- 'Activity':             The Activity Performed (i.e. Walking, Standing, etc.)                      
+- 'Subject':              The ID of the participant (from 1-30)                         
+- 'tBodyAcc_mean_X':      Mean of the Mean Body Acceleration signal along the X axis in the time domain
 -tBodyAcc_mean_Y      Mean of the Mean Body Acceleration signal along the Y axis in the time domain                 
 -tBodyAcc_mean_Z      Mean of the Mean Body Acceleration signal along the Z axis in the time domain                
 -tBodyAcc_std_X       Mean of the Standard Deviation of the Body Acceleration signal along the X axis in the time domain                 
