@@ -3,12 +3,15 @@
 
 ##Overview
 
-###Project Requirement: You should create one R script called run_analysis.R that does the following. 
+The Run_Analysis.R code contained in this directory will process sensor data from a number of input files and output a tidy dataset.
+This code will produce the following project requirements: 
 1. Merges the training and the test sets to create one data set
 2. Extracts only the measurements on the mean and standard deviation for each measurement. -N.B. this is a somewhat vague instruction. more on that later...
 3. Uses descriptive activity names to name the activities in the data set
 4. Appropriately labels the data set with descriptive variable names. 
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+Additional details can be found in the [CodeBook.md](https://github.com/RalphMorita/datasciencecoursera/blob/master/GettingCleaningDataProjectCode/CodeBook.md) file.
 
 ##Inputs and Outputs
 The R code uses the datasets found at this [site](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
