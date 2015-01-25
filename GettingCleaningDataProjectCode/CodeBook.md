@@ -190,24 +190,43 @@ For each record it is provided:
 5. Verify that a tidy dataset called MeanData.txt was created in the "OutputData" Directory
 
 The Code will do the following:
+
 1. (optional) Download the input data, and unzip it
-2. Read in the "activity_labels.txt" file and create the activity_labels dataframe. this should result in 2 columns "code" and "description"
+2. Read in the "activity_labels.txt" file.
+3. Create the activity_labels dataframe. this should result in 2 columns "code" and "description"
 3. Read in the "features.txt" file into a dataframe.
 4. Then use regular expressions to make the featurse dataframe into a vector with more readable names by replacing punctuation with underscores. (This will be used to label the columns in the tidy dataset with descriptive terms)
-5. Read in the x_train.txt and x_test.txt input files and create the x_train and x_test dataframes. 
-6. Rename the columns in the x_train and x_test with the values in the features dataframe with the col.names option (from step 4.) __This should satisfy requirement #4: "Appropriately labels the data set with descriptive variable names."__
-7. Select only the mean and standard deviation measures for the x_train and x_test dataframes. __This should satisfy requirement #2: "Extracts only the measurements on the mean and standard deviation for each measurement."__
-8. Read in the y_train.txt and y_test.txt input files and create  dataframes. These will create single column data frames containing the activity code for each measurement in the x_train/x_test labeled 'code'
-9. Read in the subject_train.txt and subject_test.txt input files and create dataframes. Subject numbers will be created in the dataframe under the column name "subject.id"
-10. Column bind the y_train to the x_train dataframe as a new dataframe called train
-11. Column bind the y_test to the x_test dataframe as a new dataframe called test
-12. Column bind the subject_train to the train dataframe
-13. Column bind the subject_test to the test dataframe
-14. Row bind the train and test dataframes as a new dataframe called Combined. __This should satisfy requirement #1: "Merges the training and the test sets to create one data set."
-15. Merge the activity_lables and combined dataframes by the "code" variable
-16. Call this new dataframe labeled_combined. Then, remove the "code" variable from the new dataframe as it is no longer needed. __This should satisfy requirement #3: "Uses descriptive activity names to name the activities in the data set".
-17. Aggregate the data by mean for description (Activity Name) and subject.id. __This should satisfy requirement #5: "From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject".
-18. Output the tidy data set as a text file with write.table() using row.name=FALSE
+5. Read in the x_train.txt input file.
+6. Read in the x_test.txt input file.
+7. Create the x_train dataframe.
+8. Create the x_test dataframe.
+9. Rename the columns in the x_train dataframe with the values in the features dataframe with the col.names option (from step 4.).
+10. Rename the columns in the x_test dataframe with the values in the features dataframe with the col.names option (from step 4.).
+__This should satisfy requirement #4: "Appropriately labels the data set with descriptive variable names."__
+11. Select only the mean and standard deviation measures for the x_train dataframe.
+12. Select only the mean and standard deviation measures for the x_test dataframe. 
+__This should satisfy requirement #2: "Extracts only the measurements on the mean and standard deviation for each measurement."__
+13. Read in the y_train.txt input file.
+14. Read in the y_test.txt input file.
+15. Create the y_train dataframe.
+16. Create the y_test dataframe.
+These will create single column data frames containing the activity code for each measurement labeled 'code'
+17. Read in the subject_train.txt input file.
+18. Read in the subject_test.txt input file.
+19. Create the subject_train dataframe. Subject numbers will be created in the dataframe under the column name "subject.id".
+20. Create the subject_test dataframe. Subject numbers will be created in the dataframe under the column name "subject.id".
+21. Column bind the y and x train dataframes as a new dataframe called train
+22. Column bind the y and x tests dataframes as a new dataframe called test
+23. Column bind the subject_train to the train dataframe
+24. Column bind the subject_test to the test dataframe
+25. Row bind the train and test dataframes as a new dataframe called Combined. 
+__This should satisfy requirement #1: "Merges the training and the test sets to create one data set."__
+26. Merge the activity_lables and combined dataframes by the "code" variable
+27. Call this new dataframe labeled_combined. Then, remove the "code" variable from the new dataframe as it is no longer needed. 
+__This should satisfy requirement #3: "Uses descriptive activity names to name the activities in the data set".__
+28. Aggregate the data by mean for description (Activity Name) and subject.id. 
+__This should satisfy requirement #5: "From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject".__
+29. Output the tidy data set as a text file with write.table() using row.name=FALSE
 
 ##7. Notes and Licenses
 Notes: 
