@@ -6,6 +6,7 @@ This document contains the following sections:
 4. Information about the summary choices
 5. Information about the experimental study design used
 6. Instructions
+7. Notes and Licenses
 
 ##1. Information about the input data
 The project uses the datasets found at this [site](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
@@ -95,6 +96,113 @@ tBodyGyroJerkMean
 The complete list of variables of each feature vector is available in 'features.txt' file located [here](https://github.com/RalphMorita/datasciencecoursera/blob/master/UCI%20HAR%20Dataset/features.txt)
 
 ##3. Information about the output data
+The assignment required only the mean and standard deviation measures from the input data. As such, only the measures ending in Mean() or std() were selected for this project. This does not include the MeanFreq measures as those measured the weighted average of the frequency components to obtain a mean frequency and not the mean values.
+
+The output is a tidy dataset called MeanData.txt. It can be found [here](https://github.com/RalphMorita/datasciencecoursera/blob/master/OutputFiles/MeanData.txt).
+This is a summarized file based on the input data. The data is summarized by Activity (Walking, Standing, etc.) and Subject (The id of the participant from 1-30).
+The following variables are included in the output data:
+-Activity             The Activity Performed (i.e. Walking, Standing, etc.)                      
+-Subject              The ID of the participant (from 1-30)                         
+-tBodyAcc_mean_X      Mean of the Mean Body Acceleration signal along the X axis in the time domain
+-tBodyAcc_mean_Y      Mean of the Mean Body Acceleration signal along the Y axis in the time domain                 
+-tBodyAcc_mean_Z      Mean of the Mean Body Acceleration signal along the Z axis in the time domain                
+-tBodyAcc_std_X       Mean of the Standard Deviation of the Body Acceleration signal along the X axis in the time domain                 
+-tBodyAcc_std_Y       Mean of the Standard Deviation of the Body Acceleration signal along the Y axis in the time domain                 
+-tBodyAcc_std_Z       Mean of the Standard Deviation of the Body Acceleration signal along the Z axis in the time domain                 
+-tGravityAcc_mean_X   Mean of the Mean Gravity Acceleration signal along the X axis in the time domain                
+-tGravityAcc_mean_Y   Mean of the Mean Gravity Acceleration signal along the Y axis in the time domain              
+-tGravityAcc_mean_Z   Mean of the Mean Gravity Acceleration signal along the Z axis in the time domain               
+-tGravityAcc_std_X    Mean of the Standard Deviation of the Gravity Acceleration signal along the X axis in the time domain                 
+-tGravityAcc_std_Y    Mean of the Standard Deviation of the Gravity Acceleration signal along the Y axis in the time domain               
+-tGravityAcc_std_Z    Mean of the Standard Deviation of the Gravity Acceleration signal along the Z axis in the time domain               
+-tBodyAccJerk_mean_X  Mean of the Mean Body Jerk Acceleration signal along the X axis in the time domain            
+-tBodyAccJerk_mean_Y  Mean of the Mean Body Jerk Acceleration signal along the Y axis in the time domain             
+-tBodyAccJerk_mean_Z  Mean of the Mean Body Jerk Acceleration signal along the Z axis in the time domain             
+-tBodyAccJerk_std_X   Mean of the Standard Deviation of the Body Jerk Acceleration signal along the X axis in the time domain             
+-tBodyAccJerk_std_Y   Mean of the Standard Deviation of the Body Jerk Acceleration signal along the Y axis in the time domain             
+-tBodyAccJerk_std_Z   Mean of the Standard Deviation of the Body Jerk Acceleration signal along the Z axis in the time domain            
+-tBodyGyro_mean_X     Mean of the Mean Body Gyro signal along the X axis in the time domain             
+-tBodyGyro_mean_Y     Mean of the Mean Body Gyro signal along the Y axis in the time domain             
+-tBodyGyro_mean_Z     Mean of the Mean Body Gyro signal along the Z axis in the time domain             
+-tBodyGyro_std_X      Mean of the Standard Deviation of the Body Gyro signal along the X axis in the time domain             
+-tBodyGyro_std_Y      Mean of the Standard Deviation of the Body Gyro signal along the Y axis in the time domain            
+-tBodyGyro_std_Z      Mean of the Standard Deviation of the Body Gyro signal along the Z axis in the time domain             
+-tBodyGyroJerk_mean_X Mean of the Mean Body Gyro Jerk signal along the X axis in the time domain             
+-tBodyGyroJerk_mean_Y Mean of the Mean Body Gyro Jerk signal along the Y axis in the time domain             
+-tBodyGyroJerk_mean_Z Mean of the Mean Body Gyro Jerk signal along the Z axis in the time domain             
+-tBodyGyroJerk_std_X  Mean of the Standard Deviation of the Body Gyro Jerk signal along the X axis in the time domain            
+-tBodyGyroJerk_std_Y  Mean of the Standard Deviation of the Body Gyro Jerk signal along the Y axis in the time domain             
+-tBodyGyroJerk_std_Z  Mean of the Standard Deviation of the Body Gyro Jerk signal along the Z axis in the time domain             
+-tBodyAccMag_std      Mean of the Standard Deviation of the Magnitude of the Body Acceleration signal in the time domain             
+-tGravityAccMag_std   Mean of the Standard Deviation of the Magnitude of the Gravity Acceleration signal in the time domain             
+-tBodyAccJerkMag_std  Mean of the Standard Deviation of the Magnitude of the Body Acceleration Jerk signal in the time domain              
+-tBodyGyroMag_std     Mean of the Standard Deviation of the Magnitude of the Body Gyro signal in the time domain             
+-tBodyGyroJerkMag_std Mean of the Standard Deviation of the Magnitude of the Body Gyro Jerk signal in the time domain             
+-fBodyAcc_mean_X      Mean of the Mean Body Acceleration signal along the X axis in the frequency domain             
+-fBodyAcc_mean_Y      Mean of the Mean Body Acceleration signal along the Y axis in the frequency domain             
+-fBodyAcc_mean_Z      Mean of the Mean Body Acceleration signal along the Z axis in the frequency domain            
+-fBodyAcc_std_X       Mean of the Standard Deviation of the Body Acceleration signal along the X axis in the frequency domain             
+-fBodyAcc_std_Y       Mean of the Standard Deviation of the Body Acceleration signal along the Y axis in the frequency domain             
+-fBodyAcc_std_Z       Mean of the Standard Deviation of the Body Acceleration signal along the Z axis in the frequency domain             
+-fBodyAccJerk_mean_X  Mean of the Mean Body Acceleration Jerk signal along the X axis in the frequency domain             
+-fBodyAccJerk_mean_Y  Mean of the Mean Body Acceleration Jerk signal along the Y axis in the frequency domain            
+-fBodyAccJerk_mean_Z  Mean of the Mean Body Acceleration Jerk signal along the Z axis in the frequency domain             
+-fBodyAccJerk_std_X   Mean of the Standard Deviation of the Body Acceleration Jerk signal along the X axis in the frequency domain             
+-fBodyAccJerk_std_Y   Mean of the Standard Deviation of the Body Acceleration Jerk signal along the Y axis in the frequency domain             
+-fBodyAccJerk_std_Z   Mean of the Standard Deviation of the Body Acceleration Jerk signal along the Z axis in the frequency domain             
+-fBodyGyro_mean_X     Mean of the Mean Body Gyro signal along the X axis in the frequency domain            
+-fBodyGyro_mean_Y     Mean of the Mean Body Gyro signal along the Y axis in the frequency domain             
+-fBodyGyro_mean_Z     Mean of the Mean Body Gyro signal along the Z axis in the frequency domain             
+-fBodyGyro_std_X      Mean of the Standard Deviation of the Body Gyro signal along the X axis in the frequency domain             
+-fBodyGyro_std_Y      Mean of the Standard Deviation of the Body Gyro signal along the Y axis in the frequency domain             
+-fBodyGyro_std_Z      Mean of the Standard Deviation of the Body Gyro signal along the Z axis in the frequency domain            
+-fBodyAccMag_std      Mean of the Standard Deviation of the Magnitude of the Body Acceleration signal in the frequency domain             
+-fBodyBodyAccJerkMag_std  Mean of the Standard Deviation of the Magnitude of the Body Acceleration Jerk signal in the frequency domain          
+-fBodyBodyGyroMag_std Mean of the Standard Deviation of the Magnitude of the Body Gyro signal in the frequency domain             
+-fBodyBodyGyroJerkMag_std Mean of the Standard Deviation of the Magnitude of the Body Gryo Jerk signal in the frequency domain         
+-angle_tBodyAccMean_gravity Mean of the angle between two tBodyAccMean Vectors     
+-angle_tBodyAccJerkMean_gravityMean Mean of the angle between two tBodyAccMJerkMean Vectors
+-angle_tBodyGyroMean_gravityMean  Mean of the angle between two tBodyGyroMean Vectors  
+-angle_tBodyGyroJerkMean_gravityMean  Mean of the angle between two tBodyGyroJerkMean Vectors
+
 ##4. Information about the summary choices
+The data was summarized using the aggregate function calling the mean() function for the relevant input variables (those variables that measured mean or standard deviation). The data was summarized by Activity and Subject.
+
 ##5. Information about the experimental study design used
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.  
+
+For each record it is provided:
+======================================
+
+- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+- Triaxial Angular velocity from the gyroscope. 
+- A 561-feature vector with time and frequency domain variables. 
+- Its activity label. 
+- An identifier of the subject who carried out the experiment.
+
 ##6. Instructions
+1. Ensure the data is downloaded and unzipped
+2. Copy the Run_Analysis.R file into the "UCI HAR Dataset" Directory
+3. Create a directory called "OutputData" at the same level as the "UCI HAR Dataset" Directory
+4. Run the Run_Analysis.R file
+5. Verify that a tidy dataset called MeanData.txt was created in the "OutputData" Directory
+
+##7. Notes and Licenses
+Notes: 
+======
+- Features are normalized and bounded within [-1,1].
+- Each feature vector is a row on the text file.
+
+For more information about this dataset contact: activityrecognition@smartlab.ws
+
+License:
+========
+Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
+
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
+
+Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
