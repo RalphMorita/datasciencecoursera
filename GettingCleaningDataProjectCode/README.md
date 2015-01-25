@@ -5,6 +5,7 @@
 
 The Run_Analysis.R code contained in this directory will process sensor data from a number of input files and output a tidy dataset.
 This code will produce the following project requirements: 
+
 1. Merges the training and the test sets to create one data set
 2. Extracts only the measurements on the mean and standard deviation for each measurement. -N.B. this is a somewhat vague instruction. more on that later...
 3. Uses descriptive activity names to name the activities in the data set
